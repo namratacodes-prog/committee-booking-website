@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header with Logo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #f8f8f8;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #000; /* Header is always black */
+            padding: 20px 25px;
+        }
+        .logo img {
+            height: 40px; /* Adjust size as needed */
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.jpg">
+        </div>
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committee Booking</title>
+    <style>
+        /* Header Styling */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        /* Dropdown Container (Scrollable) */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 280px;
+            max-height: 300px; /* Max height set for scrolling */
+            overflow-y: auto;  /* Enables scrolling */
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+
+        /* Dropdown Items */
+        .dropdown div {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .dropdown div:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown div a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: block;
+        }
+
+        /* Book Now Button */
+        .book-btn {
+            display: block;
+            margin-top: 5px;
+            padding: 8px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 3px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .book-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+
+    <!-- Header -->
+    <div class="header" onclick="toggleDropdown()">Committee</div>
+
+    <!-- Scrollable Dropdown List -->
+    <div class="dropdown" id="committeeDropdown">
+        <div>
+            <a href="#">Math Association</a>
+            <a href="https://forms.gle/2P55CTYPauiY9PQm7" class="book-btn" target="_blank">Book Now</a>
+        </div>
+        <div>
+            <a href="#">Innovation Club</a>
+            <a href="https://forms.gle/i614Ym8q6LkwJj779" class="book-btn" target="_blank">Book Now</a>
+        </div>
+        <div>
+            <a href="#">Project and Consultancy</a>
+            <a href="https://forms.gle/SZC6Qnwomn2dPTiP8" class="book-btn" target="_blank">Book Now</a>
+        </div>
+        <div>
+            <a href="#">Equal Opportunity Cell</a>
+            <a href="https://forms.gle/YzNvDG6dHGD5dTY78" class="book-btn" target="_blank">Book Now</a>
+        </div>
+        <div>
+            <a href="#">Zero Waste Management</a>
+            <a href="https://forms.gle/nJGxcRXQnmMWuUz3A" class="book-btn" target="_blank">Book Now</a>
+        </div>
+        <div>
+            <a href="#">Discipline Committee</a>
+            <a href="https://forms.gle/PX39ocqDR3cfKPJdA" class="book-btn" target="_blank">Book Now</a>
+        </div>
+        <div>
+            <a href="#">Prize Distribution Committee</a>
+            <a href="https://forms.gle/2FEvCDLs823UqUfN7" class="book-btn" target="_blank">Book Now</a>
+        </div>
+        <div>
+            <a href="#">Website Committee</a>
+            <a href="https://forms.gle/bStaLLaJ2uqTevA97" class="book-btn" target="_blank">Book Now</a>
+        </div>
+        <div>
+            <a href="#">Cultural Committee</a>
+            <a href="https://forms.gle/CpprYJjZHJQe37x27" class="book-btn" target="_blank">Book Now</a>
+        </div>
+        <div>
+            <a href="#">Placement Cell</a>
+            <a href="https://forms.gle/ow13rYbVkKovBMsT9" class="book-btn" target="_blank">Book Now</a>
+        </div>
+ <div>
+            <a href="#">research and development committee</a>
+            <a href="https://forms.gle/8MuV9kaKm2KRRMxr9" class="book-btn" target="_blank">Book Now</a>
+        </div>
+ <div>
+            <a href="#">prize distribution committee</a>
+            <a href="https://forms.gle/TuQmWXjnDLB7hHZJ6" class="book-btn" target="_blank">Book Now</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("committeeDropdown");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+    </script> 
+</html>
+
+    </header>
+<video src="videos/ipvideo.mp4" width="640" height="360" autoplay muted loop controls > Your browser does not support the video tag. </video>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Committee Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to the College Committee Portal</h1>
+        <p>Join a community, participate in events, and enhance your college experience!</p>
+        <a href="#committees" class="cta-button">Explore Committees</a>
+    </section>
+
+    <!-- Committees Section -->
+    <section class="committees" id="committees">
+        <h2>Our Committees</h2>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()" class="dropbtn">Select Committee</button>
+            <div class="dropdown-content" id="committeeDropdown">
+                <a href="#">Math Association <button class="book-btn" onclick="window.open('YOUR_FORM_LINK')">Book Now</button></a>
+                <a href="#">Innovation Club <button class="book-btn" onclick="window.open('YOUR_FORM_LINK')">Book Now</button></a>
+                <a href="#">Project & Consultancy <button class="book-btn" onclick="window.open('YOUR_FORM_LINK')">Book Now</button></a>
+                <a href="#">Cultural Committee <button class="book-btn" onclick="window.open('YOUR_FORM_LINK')">Book Now</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2>What Students Say</h2>
+        <div class="testimonial">
+            <p>"Joining the Innovation Club was the best decision of my college life!"</p>
+            <span>- Riya Sharma</span>
+        </div>
+        <div class="testimonial">
+            <p>"The Cultural Committee helped me improve my leadership skills!"</p>
+            <span>- Aarav Mehta</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("committeeDropdown");
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
